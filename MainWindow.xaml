@@ -1,0 +1,20 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWorld"
+        xmlns:Primitives="clr-namespace:System.Windows.Controls.Ribbon.Primitives;assembly=System.Windows.Controls.Ribbon"
+        xmlns:SqlClient="clr-namespace:System.Data.SqlClient;assembly=System.Security.Permissions" x:Class="HelloWorld.MainWindow"
+        mc:Ignorable="d"
+        Title="HelloWorl" Height="495" Width="945">
+    <Window.Resources>
+        <Style x:Key="DockPanelStyle1" TargetType="{x:Type DockPanel}"/>
+    </Window.Resources>
+    <Grid HorizontalAlignment="Center" Height="433" Margin="0,30,0,0" VerticalAlignment="Top" Width="925">
+        <Button x:Name="button" Content="赋值到文本框" Height="43" Margin="10,10,0,0" VerticalAlignment="Top" Width="106" Click="button_Click" HorizontalAlignment="Left"/>
+        <Button x:Name="button1" Content="展示弹出窗口" Height="43" Margin="152,10,0,0" VerticalAlignment="Top" Width="106" Click="button1_Click" HorizontalAlignment="Left"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="56" Margin="10,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243"/>
+    </Grid>
+
+</Window>
